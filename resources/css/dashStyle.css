@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Ubuntu&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;};
+
+:root
+{
+--blue:#287bff;
+--white:#fff;
+--grey:#f5f5f5;
+--black1:#222;
+--black2:#999;
+}
+
+
+
+
+
+
+
+
+body{
+min-height: 100vh;
+overflow-x: hidden;}
+
+.container{
+position: relative;
+width: 100%;
+margin-bottom:10px;
+
+}
+
+.cardBox{
+    position:relative;
+      top:50px;
+      left:280px;
+      width: 80%;
+      padding: 0px 30px 30px 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:30px;
+      
+    }
+   
+.card {
+background-color: rgb(255, 255, 255);
+height: 110%;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+box-shadow: 0 7px 25px rgba(0, 0,0, 0.08);
+}
+.cardBox .card .numbers{
+position: relative; 
+font-weight: 500; 
+font-size: 2.2em; 
+color: #287bff;
+}
+.cardBox .card .cardName{
+color: #999;
+font-size: 1em; 
+margin-top: 5px;}
+.cardBox .card .iconBox{
+font-size: 3.2em;
+ color: #999;
+}
+.cardBox .card:hover{
+background: #287bff;}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName, 
+.cardBox .card:hover .iconBox {
+color: white;}
+
+
+.details
+{
+position: relative;
+top: 80px;
+left:310px; 
+width: 85%;
+padding: 1px;
+display: grid;
+grid-template-columns: 2fr 1fr ;
+grid-gap: 30px;
+}
+
+.details .Benefeciare{
+   
+position: relative;
+display: grid; 
+min-height: 380px;
+background: white;
+padding: 20px;
+box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+border-radius: 20px;
+}
+
+.cardheader{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.cardheaderP {
+   display: flex;
+   justify-content:space-between;
+  
+}
+.icon_add {
+    font-size: 1em;
+}
+.cardheaderP h2{
+    font-weight: 500;
+    color: #287bff;}
+    
+
+.cardheader h2{
+font-weight: 600;
+color: #287bff;}
+
+.btn{
+position: relative;
+padding: 5px 10px;
+background: #287bff;
+text-decoration: none;
+color: white;
+border-radius: 6px;}
+
+.details table{
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+.details table thead td{
+font-weight: 600 ;}
+
+.details .Benefeciare table tr{
+color: black;
+border-bottom: 1px solid rgba(0, 0,0, 0.1);
+} 
+.details .Benefeciare table tbody tr:last-child{
+    border-bottom: none;
+    } 
+
+
+
+.details .Benefeciare table tbody tr:hover{
+background: #287bff;
+color: white;}
+
+ .Bloquericon:hover{
+    background: #287bff;
+    color: white;}
+
+
+.details .Benefeciare table tr td{
+  padding: 10px;
+    } 
+
+.details .Benefeciare table tr td:last-child
+{text-align: center;}
+
+.details .Benefeciare table tr td:nth-child(2)
+{text-align: end;}
+
+.details .Benefeciare table tr td:nth-child(3){
+text-align: center;
+}
+.details .Benefeciare table tr td:nth-child(4){
+    text-align: start;
+    }
+
+
+.orphelin{
+padding: 2px 4px;
+background: #3c17f4d2;
+color: white; 
+border-radius: 4px; 
+font-size: 14px; 
+font-weight: 500;
+}
+.handicape{
+    padding: 2px 4px;
+    background: #67069e6e;
+    color: white; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    font-weight: 500;
+    }
+.homeless{
+        padding: 2px 4px;
+        background: #0b87a96e;
+        color: white; 
+        border-radius: 4px; 
+        font-size: 14px; 
+        font-weight: 500;
+        }
+.veuve
+      {
+        padding: 2px 4px;
+        background: #55d0f1ae;
+        color: white; 
+        border-radius: 4px; 
+        font-size: 14px; 
+        font-weight: 500;
+            }
+ 
+ .Bloquericon{
+            font-size: 1.3em; 
+            color: transparent;
+        }
+
+
+.graphBox{
+position: relative;
+left: 300px;
+top:50px;
+width: 78%;
+padding: 20px; 
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
+min-height: 300px;
+
+}
+.box{
+    background-color: #fff;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    
+}
+
+
+.navigation{
+position: fixed;
+width: 280px;
+height: 100%;
+background-color:#287bff;
+border-left: 10px solid #287bff;
+transition: 0.5s; 
+overflow: hidden;
+}
+
+
+
+.navigation ul {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    }
+    
+.navigation ul li:hover{
+    background: white;
+    }
+
+  
+    
+.navigation ul li{
+position: relative;
+width: 100%;
+list-style:none;
+border-top-Left-radius:30px;
+border-bottom-Left-radius:30px;
+}
+.navigation ul li .Id{
+    position: relative; 
+    font-weight: 500; 
+    font-size: 2.2em; 
+    color: #287bff;
+    }
+
+.navigation ul li .titre{
+        color: #999;
+        font-size: 1em; 
+        margin-top: 5px;}
+
+
+
+.navigation ul li:nth-child(1){
+margin-top: 40px;
+margin-bottom: 50px;
+background-color: #ffffff;
+width: 100%;
+height: 160px;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+box-shadow: 0 7px 25px rgba(0, 0,0, 0.08);
+border-top-Left-radius:20px;
+border-bottom-Left-radius:20px;
+}
+.navigation ul li:nth-child(1) .iconBox{
+    font-size: 3.2em;
+    color: #999;
+    }
+
+.navigation ul li:nth-child(1)::before
+    {
+    content:'';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+     border-radius: 45%;
+    box-shadow: 33px 33px 0 10px white;
+    pointer-events: none;
+    }
+
+.navigation ul li:nth-child(1)::after
+{
+content:'';
+position: absolute;
+right: 0;
+bottom: -50px;
+width: 50px;
+height: 50px;
+border-radius: 45%;
+box-shadow: 35px -35px 0 10px white;
+pointer-events: none;
+}
+
+.navigation ul li:nth-child(2) a{
+position: relative;
+display: block;
+width: 100%;
+display: flex;
+text-decoration: none;
+color: white;
+}
+.navigation ul li:nth-child(2):hover a
+ {
+    color: #287bff;
+}
+.navigation ul li:nth-child(2) a .icon{
+position: relative;
+display: block; 
+min-width: 60px;
+height: 60px;
+Line-height: 60px;
+text-align: center;
+font-size: 1.8em;
+}
+.navigation ul li:nth-child(2) a .title { 
+position: relative;
+display: block;
+padding: 0 11px;
+height: 40px;
+Line-height: 47px;
+}
+.navigation ul li:nth-child(2):hover a::before
+{
+content:'';
+position: absolute;
+right: 0;
+top: -50px;
+width: 50px;
+height: 50px;
+ border-radius: 45%;
+box-shadow: 33px 33px 0 10px white;
+pointer-events: none;
+}
+
+
+.navigation ul li:nth-child(2):hover a::after
+{
+content:'';
+position: absolute;
+right: 0;
+bottom: -50px;
+width: 50px;
+height: 50px;
+border-radius: 45%;
+box-shadow: 35px -35px 0 10px white;
+pointer-events: none;
+}
+
+.Add_Benefeciare{
+position: relative;
+right: 40;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 40px;
+min-height: 500px;
+width: 70%;
+background-color: #fff;
+box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+border-radius: 20px;
+justify-items: center;
+display: grid;
+}
+.form{
+    height: 85%;
+   display: grid;
+   margin-top: 40px;
+   font-size:0.9em;
+   width: 60%;
+   margin-left: 15%;
+   
+  
+  }
+    input[type=text] {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        border-bottom-color: #287bff;
+      }
+
+  input[type=text]:focus {
+    outline: none;
+  }
+
+
+
+ 
+ 
+
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #287bff;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+  .Button{
+    padding: 2px 4px;
+    background: #287bff;
+    color: white; 
+    border: none;
+    border-radius: 4px; 
+    font-size: 14px; 
+    font-weight: 500;
+    width:100%;
+    }
+  
+
+
+
+
+
+    .table2 {
+        margin-top: 10px;
+        margin: 2%;
+        background: #ffffff;
+        border-collapse: collapse;
+        width: 100%;
+        
+      }
+      .table2 th {
+        border-bottom: 1px solid #364043;
+        color: #E2B842;
+        font-size: 0.85em;
+        font-weight: 600;
+        padding: 0.5em 1em;
+        text-align: left;
+      }
+      .table2 {
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        padding: 0.65em 1em;
+      }
+      .table2 .disabled td {
+        color: #4F5F64;
+      }
+      .table2 tbody tr {
+        transition: background 0.25s ease;
+      }
+      .table2 tbody tr:hover {
+        background: #014055;
+      }
+      
+
+    
